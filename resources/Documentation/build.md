@@ -16,3 +16,10 @@ The output is created in
 ```
   bazel-bin/plugins/@PLUGIN@/@PLUGIN@.jar
 ```
+
+To execute the tests run:
+
+```
+  bazel test //plugins/@PLUGIN@/...
+```
+

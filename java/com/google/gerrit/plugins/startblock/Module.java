@@ -19,6 +19,6 @@ import com.google.inject.AbstractModule;
 public class Module extends AbstractModule {
   @Override
   protected void configure() {
-    // TODO register extensions
+    install(new BlockSubmissionHashtagRule.Module());
   }
 }
