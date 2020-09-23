@@ -20,7 +20,7 @@ gerrit_plugin(
         "Gerrit-PluginName: startblock",
         "Gerrit-Module: com.google.gerrit.plugins.startblock.Module",
     ],
-    resource_jars = [":startblock-fe-static"]
+    resource_jars = [":startblock-fe-static"],
     resource_strip_prefix = "plugins/startblock/resources",
     resources = glob(["resources/**/*"]),
 )
