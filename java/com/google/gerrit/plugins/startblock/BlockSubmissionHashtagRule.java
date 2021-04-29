@@ -15,8 +15,8 @@
 package com.google.gerrit.plugins.startblock;
 
 import com.google.common.collect.ImmutableList;
+import com.google.gerrit.entities.LegacySubmitRequirement;
 import com.google.gerrit.entities.SubmitRecord;
-import com.google.gerrit.entities.SubmitRequirement;
 import com.google.gerrit.extensions.registration.DynamicSet;
 import com.google.gerrit.server.query.change.ChangeData;
 import com.google.gerrit.server.rules.SubmitRule;
@@ -48,7 +48,7 @@ public class BlockSubmissionHashtagRule implements SubmitRule {
     submitRecordNotReady.status = SubmitRecord.Status.NOT_READY;
     submitRecordNotReady.requirements =
         ImmutableList.of(
-            SubmitRequirement.builder()
+            LegacySubmitRequirement.builder()
                 .setFallbackText("Change must not have BLOCK_SUBMISSION hashtag")
                 .setType("block_submission_hashtag")
                 .build());

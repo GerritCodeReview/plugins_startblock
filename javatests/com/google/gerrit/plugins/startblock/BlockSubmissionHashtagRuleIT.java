@@ -22,8 +22,8 @@ import com.google.gerrit.acceptance.LightweightPluginDaemonTest;
 import com.google.gerrit.acceptance.NoHttpd;
 import com.google.gerrit.acceptance.PushOneCommit;
 import com.google.gerrit.acceptance.TestPlugin;
+import com.google.gerrit.entities.LegacySubmitRequirement;
 import com.google.gerrit.entities.SubmitRecord;
-import com.google.gerrit.entities.SubmitRequirement;
 import com.google.gerrit.extensions.api.changes.HashtagsInput;
 import com.google.inject.Inject;
 import java.util.Optional;
@@ -48,7 +48,7 @@ public class BlockSubmissionHashtagRuleIT extends LightweightPluginDaemonTest {
     assertThat(result.status).isEqualTo(SubmitRecord.Status.NOT_READY);
     assertThat(result.requirements)
         .containsExactly(
-            SubmitRequirement.builder()
+            LegacySubmitRequirement.builder()
                 .setFallbackText("Change must not have BLOCK_SUBMISSION hashtag")
                 .setType("block_submission_hashtag")
                 .build());
