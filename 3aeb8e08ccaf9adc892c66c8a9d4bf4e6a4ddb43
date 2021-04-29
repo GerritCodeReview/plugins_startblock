@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "255b42b3_34c68561",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1091982
+      },
+      "writtenOn": "2021-04-29T16:00:51Z",
+      "side": 1,
+      "message": "CC: Joerg as Sheriff",
+      "revId": "3aeb8e08ccaf9adc892c66c8a9d4bf4e6a4ddb43",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
